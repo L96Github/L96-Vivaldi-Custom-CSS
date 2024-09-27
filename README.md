@@ -20,6 +20,9 @@
  - **Tab Bar Position:** Top
  - **Tab Stacking:** Compact
 
+### Address Bar
+- **Show Address Bar:** Unchecked
+
 
 ## Screenshot
 ![image](https://github.com/user-attachments/assets/3db0c22d-f028-418c-8145-6885996a2c3c)
