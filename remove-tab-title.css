@@ -1,0 +1,143 @@
+/* Hide tab titles */
+.tab-position [id*="tab"].tab span.title {
+  display: none;
+}
+
+/*FOR SECOND LEVEL STACK
+
+https://forum.vivaldi.net/topic/55903/wider-pinned-tabs/16
+*/
+
+.tab-position {
+  --PositionX: 0px !important;
+}
+
+.tab-position.tab-yield-space {
+  --PositionX: 0px !important;
+  margin-bottom: 2px !important;
+}
+
+/* MULTILINE SECOND LEVEL */
+
+#tabs-subcontainer.top.visible {
+  flex-basis: unset !important;
+  min-height: 34px !important;
+  margin-left: 5px !important;
+}
+
+.tab-position [id*="tab"].tab.insubstrip {
+  height: 32px !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+
+/* GENERAL MOD*/
+
+#tabs-tabbar-container {
+  height: 31px !important;
+  margin-top: 1px !important;
+  margin-bottom: 2px !important;
+}
+
+.mainbar {
+  margin-top: 1px !important;
+}
+
+.resize {
+  /*display: block !important;*/
+}
+
+.tab-strip {
+  display: block;
+}
+
+.tab-strip > span {
+  display: inline-block;
+}
+
+.tab-strip > span > .tab-position {
+  left: 0px !important;
+  position: relative;
+  height: 24px !important;
+  width: auto !important;
+}
+
+.tab-strip > span > .tab-position > .tab:not(.pinned) {
+  width: 40px !important;
+  margin-right: 2px !important;
+  margin-left: 2px !important;
+  align-items: center;
+  height: 30px !important;
+}
+
+.tab-strip > span > .tab-position > .tab.pinned {
+  width: 149px !important;
+  height: 30px !important;
+  margin-right: 2px !important;
+  margin-left: 2px !important;
+}
+.tab.pinned .tab-header {
+  padding-bottom: 3px;
+}
+
+.tab-strip > .newtab {
+  --PositionX: 1px !important;
+  left: 1px !important;
+  margin-right: 1px !important;
+  margin-left: 1px !important;
+  top: 0px !important;
+  position: relative !important;
+  display: inline-block;
+  padding: 0;
+  vertical-align: top;
+}
+
+.tab-header > .favicon > svg {
+  height: 17px;
+  padding-left: 2px;
+}
+
+.tab-header .tab.uifocusstop.insubstrip {
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+
+.tab-strip > .toolbar.toolbar-tabbar {
+  display: inline-flex;
+}
+
+.tab[title*="Feedbro"].pinned,
+.tab[title*="Notifications"].pinned,
+.tab[title*="WhatsApp"].pinned {
+  min-width: 34px !important;
+  max-width: 34px !important;
+}
+
+
+.tab-group-indicator {
+    bottom: -6px !important;
+    left: 3px;
+}
+
+/* Hide selected workspace titles */
+button[name="WorkspaceButton"] > .button-title {
+  display: none !important;
+  visibility: hidden;
+}
+
+.burger-icon svg {
+  margin-top: 3px;
+}
+
+.window-buttongroup > button {
+  height: 45px !important;
+}
+
+.tab-position .tab .tab-header{
+  padding-right: 7px;
+}
+
+/* Hide new tab button, as it shows in the wrong place */
+.tab-strip .button-toolbar.newtab {
+  display: none;
+}

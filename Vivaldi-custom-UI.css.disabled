@@ -1,0 +1,93 @@
+/*Mod to increase tab icons*/
+#tabs-tabbar-container,
+#tabs-container,
+.tab-strip,
+.tabbar-workspace-button {
+  min-width: 40px !important;
+  max-width: 140px !important;
+} 
+.tab-position {
+  height: 40px !important;
+  position: relative;
+  --PositionY: 0px !important;
+}
+.newtab {
+  top: 0px !important;
+  left: 2px !important;
+}
+.tab-position .tab {
+  padding: 2px;
+}
+.tab-position .tab .tab-header {
+  padding: 5px;
+  flex-basis: 40px !important;
+}
+.tab-position .tab .favicon {
+  min-width: 26px !important;
+  min-height: 26px !important;
+}
+.tab-position .tab .favicon > img,
+.tab-position .tab .favicon svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+.tab-position .tab .title {
+  margin-left: 3px;
+}
+.tab-position .tab .progress-indicator {
+  right: 3px;
+  bottom: 1px;
+  left: 3px;
+}
+#tabs-container .button-toolbar > button {
+  width: 36px;
+  height: 36px;
+}
+#tabs-container .sync-and-trash-container .button-toolbar > button svg,
+#switch .addwebpanel-wrapper > button svg,
+#switch > button svg {
+  -webkit-transform: scale(1.25);
+}
+#switch {
+  min-width: 40px;
+}
+#switch > button,
+#switch .addwebpanel-wrapper > button {
+  position: relative;
+  top: 0 !important;
+  width: 40px;
+  height: 40px;
+}
+.panel-group {
+  right: 40px !important;
+}
+#switch button.webviewbtn img {
+  width: 24px;
+  height: 24px;
+}
+
+.tabs-left .svg-tab-stack{
+  width: 33px !important;
+  height: 40px !important;
+}
+#tabs-tabbar-container.visible{
+  min-width: 65px;
+}
+#tabs-subcontainer.left{
+  box-shadow: 1px 0 rgba(128, 128, 128, 0.5) inset, -1px 0 rgba(128, 128, 128, 0.5) inset;
+}
+.tabbar-wrapper{
+  left: -2px;
+}
+#tabs-subcontainer.visible {
+  min-width: 40px;
+}
+.SlideBar--FullHeight {
+  right: -2px;
+}
+.tab-position .tab-header .title {
+  display: none !important;
+}
+.tab-position .tab .stack-counter {
+  margin-left: 11px;
+}

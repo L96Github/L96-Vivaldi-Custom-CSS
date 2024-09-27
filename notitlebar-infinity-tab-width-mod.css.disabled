@@ -1,0 +1,69 @@
+/* hide vivaldi logo (top left) and window controls (minimize, maximize, close) */
+#titlebar {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* add padding replacing vivaldi logo and window controls */
+#tabs-container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;	
+}
+
+/* center tab title */
+.tab .title {
+    justify-content: center !important;
+}
+
+/* hide workspace indicator in tab menu */
+.button-toolbar.tabbar-workspace-button.workspace-popup {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* add padding to not overlap tab menu and new tab button */
+#tabs-container.top .tab-strip {
+    display: flex !important;
+    padding-right: 30px !important;
+}
+
+/* unlimited tabs width (safari-like) */
+#tabs-container.top .tab-strip span {
+    flex: 1 1 0 !important;
+    display: flex !important;
+}
+
+/* unlimited tabs width (safari-like) */
+#tabs-container.top .tab-position {
+    flex: 1 1 0 !important;
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    height: 30px !important;
+    transform: revert !important;
+}
+
+/* gray border to separate tabs */
+#tabs-container.top .tab-position:not(.toolbar):not(.tab-strip:last-child) {
+    border-right: 1px solid rgba(255,255,255,0.15) !important;
+    border-left: 1px solid rgba(255,255,255,0.15) !important;
+}
+
+/* do not count new tab button as a tab div */
+#tabs-container.top .tab-position.toolbar {
+    position: absolute !important;
+    right: 0;
+}
+
+/* new tab button size */
+#tabs-container.top .tab-position .tab .favicon,
+#tabs-container.top .tab-position .tab .close {
+    flex: 0 0 18px !important;
+}
+
+/* unlimited tabs width (safari-like) */
+#tabs-container.top .newtab {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+}

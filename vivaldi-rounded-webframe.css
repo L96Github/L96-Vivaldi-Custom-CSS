@@ -1,0 +1,40 @@
+/* https://forum.vivaldi.net/topic/83618/edge-like-curved-frame-around-website
+*/
+
+#webpage-stack {
+    /* change color (last parameter) to your preferred color */
+    /* box-shadow: 0 0 0 0.75rem var(--colorAccentBg);  */
+    border-radius: 1rem;
+    margin-top: 0.35rem;
+    margin-left: 0.3rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
+#webview-container {
+    background-color: var(--colorAccentBg);
+}
+.mainbar {
+    margin-top: -6px !important;
+}
+#browser:not(.address-top) > #header {
+    box-shadow: unset !important;
+}
+
+/* WebKit-based browsers */
+#webpage-stack::-webkit-scrollbar {
+    width: 12px;
+}
+
+#webpage-stack::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+
+#webpage-stack::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 15px;
+}
+
+#webpage-stack::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
