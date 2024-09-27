@@ -138,6 +138,6 @@ button[name="WorkspaceButton"] > .button-title {
 }
 
 /* Hide new tab button, as it shows in the wrong place */
-.tab-strip .button-toolbar.newtab {
+.toolbar.toolbar-tabbar.toolbar-large.tab-position:has(.newtab) {
   display: none;
 }
